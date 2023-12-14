@@ -1,17 +1,101 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 1s;
+
 }
 
-body{
-    background-color: black;
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 60px;
+  color: wheat;
 }
 
-canvas{
-    width: 300px;
-    height: 300px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+p {
+  display: block;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 300px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.342);
+  text-decoration: solid;
+  text-overflow: clip;
+  word-spacing: 3px;
+  font-size: 20px;
+
+}
+
+.texto :hover {
+  font-size: 25px;
+  background-color: black;
+}
+
+body {
+  background-color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(255, 102, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: block;
+}
+h3{
+  text-align: center;
+  color: rgb(255, 102, 0);
+  font-size: 50px;
+}
+.tudo {
+  background-color: rgb(255, 255, 255);
+  height: 400px;
+  width: 700px;
+  border-radius: 50px;
+  display: block;
+  position: relative; top: auto; left: 50%; transform: translate(-50%, -50%);
+  ;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+a {
+  width: 40%;
+  background-color: gray;
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 25px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 30px;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a p{
+  text-align: center;
+  color: rgba(156, 0, 0);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+a:hover{
+    background-color: rgb(228, 228, 228);
+    border: 20px solid rgb(255, 102, 0);
 }

@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background-color: black;
+}
+
+#container {
+    width: 500px;
+    height: 500px;
+    border: 5px solid rgb(255, 102, 0);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-image: url(ambiente.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    border-radius: 2px;
+}
+
+#gaivota {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(gaivota.gif);
+    background-size: 100% 100%; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    transition: top 0.5s; 
+    left: 20%;
+}
+
+.montanha {
+    width: 100px;
+    height: 100px; 
+    position: absolute;
+    animation: none;
+}
+
+#montanha1 {
+    top: -10;
+    rotate: 180deg;
+    background-image: url(pilar.png);
+    background-size: 100% 100%; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+#montanha2 {
+    bottom: 0;
+    background-image: url(pilar.png);
+    background-size: 100% 100%; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+@keyframes andar {
+
+    to {
+        left: -20%;
+    }
+
+    from {
+        left: 100%;
+    }
+}
+
+@keyframes sumir {
+    10% {
+        left: 30%;
+        top: 50%;
+        transform: translate(-50%, -0%);
+    }
+
+    20%{
+        left: 10%;
+        top: 50%;
+        transform: translate(-50%, -0%);
+    }
+
+    90%{
+        left: 100%;
+        top: 50%;
+        transform: translate(-50%, -0%);
+    }
+    100% {
+        left: 110%;
+        top: 50%;
+        transform: translate(-50%, -0%);
+    }
+}
+
+@keyframes sumir1 {
+    0% {
+        left: 100%;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    99% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;left: 100%;
+        left: -20%;
+    }
+}

@@ -87,7 +87,7 @@ function batida() {
         gaivotaTop <= montanha1Top + montanha1Height && game
     ) {
         game = false;
-        alert("Game Over: Você bateu no pilar 1!");
+        alert("Game Over: Você bateu no pilar 1! -->APERTE F5 NO TECLADO");
     }
 
     if (
@@ -97,7 +97,7 @@ function batida() {
         gaivotaTop <= montanha2Top + montanha2Height && game
     ) {
         game = false;
-        alert("Game Over: Você bateu no pilar 2!");
+        alert("Game Over: Você bateu no pilar 2! -->APERTE F5 NO TECLADO");
         reiniciarJogo();
     }
 

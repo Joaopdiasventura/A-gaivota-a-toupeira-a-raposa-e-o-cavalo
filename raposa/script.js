@@ -169,16 +169,16 @@ function loopPrincipal() {
 
 document.addEventListener("keydown", (e) => {
   switch (e.key) {
-    case "ArrowLeft":
+    case "ArrowLeft" | "a" | "A":
       jogador.mover(-1, 0);
       break;
-    case "ArrowRight":
+    case "ArrowRight" | "d" | "D":
       jogador.mover(1, 0);
       break;
-    case "ArrowUp":
+    case "ArrowUp" | "w" | "W":
       jogador.mover(0, -1);
       break;
-    case "ArrowDown":
+    case "ArrowDown" | "s" | "S":
       jogador.mover(0, 1);
       break;
     case "h":
